@@ -1,0 +1,39 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /* Der Code innerhalb dieser Klammern wird nur auf Bildschirmen
+       angezeigt, die weniger als 768px breit sind. */
+    .card.headline {
+        order: 0;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Der Code innerhalb dieser Klammern wird nur auf Bildschirmen
+       angezeigt, die weniger als 480px breit sind. */
+    .card {
+        margin-right: auto;
+    }
+
+    .cardmain {
+        margin-bottom: 20px;
+    }
+    /** ...bis hier CSS-Regeln hinzufügen. */
+
+}

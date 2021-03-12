@@ -1,0 +1,65 @@
+body {
+    font-family: arial;
+    border: 1px solid #888888;
+	margin: 3% auto;
+	width: 21cm;
+	min-height: 27.9cm;
+	box-shadow: -6px 6px 12px #888888;
+	padding: 2cm 2.5cm;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.sign {
+    min-height: 50px;
+    max-height: 80px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+.tone, .ttwo, .tthree, .tfour, .tfive {
+    background-color: gray;
+}
+
+.one {
+    margin-bottom: 30px;
+}
+
+.two {
+    margin-bottom: 30px;
+}
+
+.three {
+    margin-bottom: 30px;
+}
+
+.five {
+    margin-bottom: 30px;
+}
+
+.person1 {
+    font-family: arial;
+    margin-right: 50%;
+} 
+
+.person2 {
+    font-family: arial;
+    margin-left: 50%;
+}
+
+.tableborder {
+    border-color: black;
+}
+
+.tabletrans {
+    border-color: transparent;
+}

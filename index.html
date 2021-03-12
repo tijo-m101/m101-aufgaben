@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Rechnungsvorlage</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+      <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.macphun.com/img/uploads/customer/blog/777/15356706505b88797a350798.24315774.jpg?q=85&w=1680");
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+
+        .hero-text button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 10px 25px;
+          color: black;
+          background-color: #ddd;
+          text-align: center;
+        }
+
+        .hero-text button:hover {
+          background-color: #555;
+          color: white;
+        }
+
+        td {
+          padding-left: 10%;
+        }
+
+        .First_Table_Row {
+          margin-bottom: 50px;
+        }
+
+        .logo {
+          height: 40px;
+          float: left;
+          position: relative;
+        }
+
+        .main {
+          padding-top: 30px;
+        }
+
+        .sans {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .li2 {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: dodgerblue;
+        }
+
+        .Table {
+          margin-left:auto; 
+          margin-right:auto;
+        }
+
+        .sans {
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        .buton {
+          border-radius: 5px;
+
+        }
+
+        article {
+          font-family: 'Noto Serif', serif;
+        }
+
+        .gray {
+          background-color: whitesmoke;
+        }
+
+        .ul2 {
+          text-decoration: none;
+          list-style: none;
+          padding-right: 40px;
+        }
+
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: #282C34;
+          color: white;
+        }
+
+        .hearth {
+          color: #f3a5b4;
+        }
+
+        .arts {
+          text-align: center;
+        }
+
+        .aut {
+          color: dodgerblue;
+          text-decoration: none;
+        }
+
+        .git {
+          height: 50px;
+        }
+
+        .sign {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .anlagen {
+          margin:0 auto;
+        }
+      </style>
+    </head>
+    <body>
+      <ul class="sans">
+        <li class="li2"><a class="active" href="#home">Home</a></li>
+        <li class="li2"><a href="#news">text</a></li>
+        <li class="li2"><a href="#contact">Contact</a></li>
+        <li class="li2"><a href="#about">About</a></li>
+      </ul>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Hero </h1>
+          <p>Tremendous Hero tag</p>
+          <button class="buton">Sample</button>
+        </div>
+      </div>
+      <section class="main">
+        <div class="arts">
+          <article class="Person_1">
+            <p>Timo Sarkar <br>
+              Röhrliberg 40<br>
+              6330 Cham</p>
+          </article>
+          <article class="Person_2">
+            <p>Joshua Sanchez <br>
+              Emmenstrasse 42 <br>
+              6969 Littau</p>
+          </article>
+          <br>
+          <p style="font-style: italic;">Adligenswil 10.03.2021</p>
+        </div>
+        <section class="gray">
+          <br>
+          <article>
+            <h2 style="text-align: center;">Rechnung XX-XXXX-XX</h2>
+          </article>
+          <article>
+            <p style="text-align: center;">Wie vereinbart stellen wir Ihnen folgende Aufwände in Rechnung</p>
+            <table class="Table">
+              <tr class="First_Table_Row">
+                <td>#</td>
+                <td>Beschreibung</td>
+                <td>Stückpreis</td>
+                <td>Anzahl</td>
+                <td>Preis (CHF)*</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Computer</td>
+                <td>499.00</td>
+                <td>5</td>
+                <td>1495.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Festplatte</td>
+                <td>45.00</td>
+                <td>5</td>
+                <td>225.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Kabel</td>
+                <td>4.00</td>
+                <td>15</td>
+                <td>60.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1780.00</td>
+              </tr>
+            </table>
+            <br>
+          </article>
+        </section>
+      </section>
+      <article>
+        <p style="text-align: center;">Vielen Dank für Ihr Vertrauen</p>
+      </article>
+      <article>
+        <p style="text-align: center;">Freundliche Grüsse</p>
+      </article>
+      <article>
+        <img class="sign" src="data:image/png;base64,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" alt="sign">
+      </article>
+      <article class="anlagen">
+        <h3 style="text-align: center;">Anlagen</h3>
+        <ul class="ul2">
+          <li style="text-align: center;">Garantien</li>
+          <li style="text-align: center;">Handbücher</li>
+        </ul>
+      </article>
+      <br>
+      <footer>
+        <p>Built with <span class="hearth">❤</span> by <a class="aut" href="https://timo-cmd.github.io">Timo Sarkar</a> and Joshua Sanchez</p>
+      </footer>
+    </body>
+  </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+        <link rel="stylesheet" href="main.css" />
+        <title>
+            Formular
+        </title>
+    </head>
+    <body>
+        <h1 class="title is-1">Formular by Timo Sarkar</h1>
+        <form action="https://formlog.offline.ch/log" method="POST">
+            <label for="Name">Name</label>
+            <div class="field">
+                <div class="control">
+                    <input class="input" name="Name" type="text" id="Name" />
+                </div>
+            </div>
+
+            <br />
+
+            <label for="Email">Email</label>
+            <div class="field">
+                <div class="control">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <input class="input" name="Email" type="email" id="Email" />
+                </div>
+            </div>
+            <br />
+
+            <label for="Street">Strasse</label>
+            <div class="field">
+                <div class="control">
+                    <input class="input" name="Street" type="text" id="Street" />
+                </div>
+            </div>
+            <br />
+
+            <label for="PLZ">PLZ</label>
+            <div class="field">
+                <div class="control">
+                    <input class="input" name="PLZ" type="number" id="PLZ" />
+                </div>
+            </div>
+            <br />
+
+            <label for="Ort">Ort</label>
+            <div class="control">
+                <input class="input" name="Ort" type="text" id="Ort" />
+            </div>
+
+            <br />
+
+            <label for="Tel">Telefonnummer</label>
+            <div class="control">
+                <input class="input" name="Tel" type="number" id="Tel" placeholder="Pflichtfeld" required />
+            </div>
+
+            <br />
+
+            <label for="TelPrivat">Telefonnummer Privat</label>
+            <div class="control">
+                <input class="input" name="TelPrivat" type="number" id="TelPrivat" placeholder="Kein Pflichtfeld" />
+            </div>
+
+            <br />
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option value="1">Kein Abo</option>
+                        <option value="2">GA</option>
+                        <option value="3">Halbtax</option>
+                        <option value="4">Streckenabo Luzern-Zürich</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <optgroup label="Menu 1">
+                            <option value="1">mit Fleisch</option>
+                            <option value="2">ohne Fleisch</option>
+                        </optgroup>
+                        <optgroup label="Menu 2">
+                            <option value="3">mit Gemuse</option>
+                            <option value="4">ohne Gemuse</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" id="r1" name="ubernachtung" value="OhneUbernachtung" />
+                    Ohne Übernachtung
+                </label>
+            </div>
+
+            <input type="radio" id="r2" name="ubernachtung" value="MitUbernachtung" />
+            <label for="r2">Mit Übernachtung</label><br />
+            <input type="radio" id="r3" name="Zimma" value="ezimmer" />
+            <label for="r3">Einzelzimmer</label><br />
+
+            <input type="radio" id="r4" name="Zimma" value="dzimmer" />
+            <label for="r4">Doppelzimmer</label>
+            <br />
+            <br />
+
+            <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+            <br />
+            <br />
+            <div class="control">
+                <button class="button is-link" onclick="window.location.href='https://formlog.offline.ch/'">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
